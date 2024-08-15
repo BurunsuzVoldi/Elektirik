@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /* google fonts'tan montserrat fontunu içe aktarır */
+
+body {
+    margin: 0; /* sayfanın varsayılan dış boşluklarını sıfırlar */
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* montserrat fontunu kullanır eğer desteklenmezse sans-serif kullanılır */
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #fff;
+    color: #272727;
+}
+
+h1, h2, p {
+    margin: 0; /* başlık ve paragraf etiketlerinin varsayılan dış boşluklarını sıfırlar */
+}
+
+ul {
+    list-style: none; /* liste işaretlerini kaldırır */
+    margin: 0;
+    padding: 0; /* listenin varsayılan iç boşluklarını sıfırlar */
+}
+
+.header {
+    background-image: url("../img/back.jpg");
+    background-size: contain; /* arka plan resmini kapsayacak şekilde ayarlar */
+    background-repeat: no-repeat;
+    background-position: left; /* arka plan resmini sola hizalar */
+    background-color: #CCE59D; /* arka plan rengini açık yeşil yapar */
+    padding: 25vh 30px;
+    margin-bottom: 60px; /* alt dış boşluk 60px yapar */
+    display: flex; /* esnek kutu düzeni kullanır */
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* esnek kutu elemanları arasında 30px boşluk bırakır */
+    width: fit-content;
+    text-align: right;
+}
+
+main {
+    padding: 0 30px 100px; /* üst iç boşluk 0 sağ ve sol iç boşluk 30px alt iç boşluk 100px yapar */
+}
+
+.main__title {
+    text-align: center;
+    margin-bottom: 100px; /* alt dış boşluk 100px yapar */
+}
+
+.list {
+    display: flex;
+    justify-content: space-around; /* esnek kutu elemanlarını çevreye yayar */
+}
+
+.list__item a {
+    text-decoration: none; /* bağlantıların varsayılan alt çizgisini kaldırır */
+    display: flex;
+    flex-direction: column; /* esnek kutu elemanlarını dikey hizalar */
+    align-items: center;
+    color: inherit;
+    gap: 20px; /* esnek kutu elemanları arasında 20px boşluk bırakır */
+    padding: 20px;
+    border-radius: 24px; /* kenarları 24px yuvarlatır */
+    border: 1px solid #EB8028;
+    transition: 0.2s;
+}
+.item__img {
+    object-fit: contain; /* içeriği kutu içinde sığacak şekilde ayarlar */
+    width: 150px;
+}
+
+.list__item a:hover {
+    box-shadow: 1px 1px 4px 4px #0EB07C; /* hover durumunda kutuya gölge ekler */
+}
+
+.main__rez {
+    display: flex;
+    flex-direction: column; /* esnek kutu elemanlarını dikey hizalar */
+    gap: 20px;
+    align-items: center;
+}
+
+.rez__img {
+    object-fit: contain;
+    width: 300px; /* genişliği 300px yapar */
+}
+
+.main__title--margin {
+    margin-bottom: 50px; /* alt dış boşluk 50px yapar */
+}
